@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aprendiendo  JQuery</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- 
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> 
+    
+    -->
+
+    <script type="text/javascript" src="js/01-selectores.js"></script>
+
+    <style>
+        .zebra{
+        border: 5px dashed black;   
+        }
+        .grandes{
+            font-size: 30px;
+          }
+        .margin-superior{
+            display:block;
+            margin-top: 45px;
+            
+        }
+        .resaltado{
+            border-bottom: 2px solid green;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Aprendiendo JQuery con Victor  Robles web </h1>
+    <ul>
+        <li><a href="https://www.google.com" title="Google"> Ir a Google</a></li>
+        <li><a href="https://www.facebook.com" title="Facebook">Ir a Facebook</a></li>
+        <li><a href="https://www.gmail.com" title="Gmail">Ir a Correo Electronico</a></li>
+     
+    </ul>
+
+
+    <p id="rojo" class="sin_border">Ejercicio de JQuery</p>
+    <p id="amarillo" class="zebra">Practicando con selectores </p>
+    <p id="verde" class="sin_border">quiero ser un parrafo verde</p>
+    <p class="zebra">Soy un parrafo Blanco</p>
+
+    <div id="caja">
+        <p>Hola soy una caja</p>
+        <ul>
+            <li class="">Elemento 1</li>
+            <li class="elemento2">Elemento 2</li>
+        </ul>
+        <span class="resaltado">Soy un Span</span>
+    </div>
+</body>
+</html>

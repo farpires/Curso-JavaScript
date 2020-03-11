@@ -1,0 +1,25 @@
+
+
+body{
+    background: url('../img/theme_btc.png');
+    background-attachment: fixed;
+}
+
+header #logo{
+    background: #EFB810;
+}
+
+
+nav .botonMenu:hover, nav .botonMenu:active{
+    background: #EFB810;
+    border-color:#EFB810;
+}
+
+
+#content #posts .post .button-more{
+    background: #EFB810;
+  }
+
+
+
+  

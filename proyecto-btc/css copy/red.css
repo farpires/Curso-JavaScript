@@ -1,0 +1,21 @@
+
+
+body{
+    background: url('../img/rojo.jpg');
+    background-attachment: fixed;
+}
+
+header #logo{
+    background: #CA3413;
+}
+
+
+nav .botonMenu:hover, nav .botonMenu:active{
+    background: #CA3413;
+    border-color:#CA3413;
+}
+
+
+#content #posts .post .button-more{
+  background: #CA3413;
+  }

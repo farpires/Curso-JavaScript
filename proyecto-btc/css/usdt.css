@@ -1,0 +1,21 @@
+
+
+body{
+    background: url('../img/theme_usdt.png');
+    background-attachment: fixed;
+}
+
+header #logo{
+    background: #235e3d;
+}
+
+
+nav .botonMenu:hover, nav .botonMenu:active{
+    background: #235e3d;
+    border-color:#235e3d;
+}
+
+
+#content #posts .post .button-more{
+  background: #235e3d;
+  }

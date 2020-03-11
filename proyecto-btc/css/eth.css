@@ -1,0 +1,21 @@
+
+
+body{
+    background: url('../img/theme_eth.png');
+    background-attachment: fixed;
+}
+
+header #logo{
+    background: #1f87c4;
+}
+
+
+nav .botonMenu:hover, nav .botonMenu:active{
+    background: #1f87c4;
+    border-color:#1f87c4;
+}
+
+
+#content #posts .post .button-more{
+  background: #1f87c4;
+  }

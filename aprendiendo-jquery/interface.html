@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Aprendiendo JQuery</title>
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- jQuery-ui -->
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css"> 
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/06-interface.js"></script>
+    <style>
+    .elemento{
+        width: 300px;
+        height: 200px;
+        border: 10px solid black;
+        background-color: cornflowerblue ;
+        margin: 10px;
+        text-align: center;
+        float: left;
+    }
+    .lista-selecionable li{
+        width: 80%;
+        padding: 20px;
+        border: 1px solid black;
+        list-style: none;
+        cursor: pointer;
+    }
+    ul .ui-selecting{background: green;}
+    ul .ui-selected{background: blue;}
+
+    #elemento-movido{
+        width: 100px;
+        height: 100px;
+        border: 10px solid red;
+        margin: 5px;
+    }
+
+    #area{
+        width: 300px;
+        height: 300px;
+        border: 10px solid green;
+        margin: 5px;
+    }
+
+    .elemento{
+       
+        background-color: pink ;
+        float: none;
+        display: none;
+    }
+
+    </style>
+ 
+
+</head>
+
+<body>
+    <h1>Aprendiendo JQuery -Victorroblesweb.es - jQuery UI</h1>
+
+    <hr>
+    <h3>Toolti</h3>
+    <a href="#" title="Acceder a la seccion de mis datos de esta web">Mis Datos</a>
+    <a href="#" title="Logueate en esta web">Identificarse</a>
+    <a href="#" title="Ver todos mis amigos">Amigos</a>
+
+    <hr>
+
+    <h3>Cuadros de Dialogos</h3>
+    <button id="lanzar-popup">Lanzame</button>
+    <div id="popup" title="estas seguro?" style="display: none;">
+        <p>
+            si continuas en el cursos aprenderas muchos de javascrip inevitablemente    
+        </p>
+    </div>
+    
+    <hr>
+
+
+    <h3>Calendario</h3>
+   <input type="text" id="calendario">
+    
+    <hr>
+
+
+
+    <h3>Pestañas</h3>
+   <div id="pestanas">
+       <ul>
+           <li><a href="#tabs-1">Pestaña 1</a></li>
+           <li><a href="#tabs-2">Pestaña 2</a></li>
+           <li><a href="#tabs-3">Pestaña 3</a></li>
+       </ul>
+       <div id="tabs-1">
+        Hola soy la primera Pestaña
+       </div>
+       <div id="tabs-2">
+        Hola soy la segunda Pestaña
+       </div>
+       <div id="tabs-3">
+        Hola soy la tercera Pestaña
+       </div>
+
+   </div>
+    
+    <hr>
+
+
+
+    <button id="mostrar">Mostrar</button>
+    <div class="caja-efectos elemento"></div>
+
+    <div id="elemento-movido" >
+
+    </div>
+    <div id="area">
+
+    </div>
+
+
+    <ul class="lista-selecionable">
+        <li>GTA 5</li>
+        <li>Need for Speed</li>
+        <li>Crash Bandicoot</li>
+        <li>Super Mario</li>
+        <li>Galaxian</li>
+    </ul>
+
+
+    <div class="elemento">
+        Hola soy un elemento de la web 1
+    </div>
+    <div class="elemento">
+        Hola soy un elemento de la web 2
+    </div>
+    <div class="elemento">
+        Hola soy un elemento de la web 3
+    </div>
+
+</body>
+
+</html>

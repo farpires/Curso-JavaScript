@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catamarca bitcoin</title>
+    <!--Estilo CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/btc.css">
+      <!--jQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <!--slider-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+      <!--Mis Scripts-->
+      <script type="text/javascript" src="js/main.js"></script>
+      <!--Moment-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+</head>
+
+<body>
+    <div id="selector-theme">
+        <div id="to-btc"></div>
+        <div id="to-eth"></div>
+        <div id="to-usdt"></div>
+    </div>
+    <main id="global">
+        <!--Cabecera-->
+        <header>
+            <h1 id="logo">Bitcoin</h1>
+            <form id="buscar">
+                <div>
+                    <input type="search" id="miBusqueda">
+                    <button>Buscar</button>
+                </div>
+            </form>
+        </header>
+        <!--Menu-->
+        <nav>
+            <a href="#" class="botonMenu">inicio</a>
+            <a href="#" class="botonMenu">Reloj</a>
+            <a href="#" class="botonMenu">Sobre Mi</a>
+            <a href="#" class="botonMenu">Contacto</a>
+        </nav>
+        <!--slider-->
+        <div class="slider">
+            <div class="bxslider">
+                <div><img src="img/btc.png" title="Que es bitcoin?"></div>
+                <div><img src="img/Dorian S. Nakamoto.png"  title="quien creo btc?"></div>
+                <div><img src="img/cambio-dolar-bitcoin.png" title="como conseguir?"></div>
+            </div>
+        </div>
+        <section id="content">
+            <article id="posts">
+              <!--Cargar posts desde json -->
+            </article>
+
+            <aside>
+                <div id="about">
+                    <h4><span>quien soy?</span></h4>
+                    <img src="img/caracol.jpg" alt="imagen">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam minima totam quisquam
+                        consectetur eum ea obcaecati odio molestias quia magni, fuga est culpa. Nobis, distinctio! Nam
+                        ipsum corporis praesentium!</p>
+                </div>
+                <div id="login">
+                    <h4><span> identificate</span></h4>
+                    <form>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name"/>
+                        <label for="email">Correo</label>
+                        <input type="email" name="email"/>
+                        <label for="password">Constrasena</label>
+                        <input type="password" name="password"/>
+      
+                        <input type="submit" value="Entrar">
+                      </form>
+                </div>
+               
+            </aside>
+           
+
+            <div class="clearfix">
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>Master en Java Scrip\t</p>
+    </footer>
+    
+
+
+</body>
+
+</html>
