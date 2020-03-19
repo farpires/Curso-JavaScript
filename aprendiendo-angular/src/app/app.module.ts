@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { VideojuegoComponent } from './videoJuego/videoJuego.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
+import { CursoComponent } from './curso/curso.component';
 
 @NgModule({
   declarations: [//aqui van las directivas componentes
     AppComponent,
     VideojuegoComponent,
-    ZapatillasComponent
+    ZapatillasComponent,
+    CursoComponent
 
   ],
   imports: [
