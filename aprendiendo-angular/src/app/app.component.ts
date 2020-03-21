@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.styl']
 })
 export class AppComponent {
-  title = 'Master de Javascript';
+  public titulo = 'Master de Javascript';
+  public mostrar_VideoJuegos : boolean = true;
+
+  ocultarVideojuego(value){
+    this.mostrar_VideoJuegos = value;
+  }
 }
