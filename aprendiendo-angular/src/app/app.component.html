@@ -10,9 +10,26 @@
     Bienvenido al {{titulo}}
   </h1>
   <p>{{descripcion}}</p>
+  <nav>
+    <a [routerLink]="['/home']" [routerLinkActive]="['active']">Home</a>
+    &nbsp;
+    <a [routerLink]="['/zapatillas']" [routerLinkActive]="['active']">zapatillas</a>
+    &nbsp;
+    <a [routerLink]="['/cursos']" [routerLinkActive]="['active']">Cursos</a>
+    &nbsp;
+    <a [routerLink]="['/videojuego']" [routerLinkActive]="['active']">VideoJuego</a>
+    &nbsp;
+    <a [routerLink]="['/externo']" [routerLinkActive]="['active']">Externo</a>
+    &nbsp;
+    <a [routerLink]="['/contacto']" [routerLinkActive]="['active']">Contacto</a>
+  </nav>
+  <hr>
   <!-- <button (click)="ocultarVideojuego(false)" *ngIf="mostrar_VideoJuegos">Ocultar Video Juego</button>
   <button (click)="ocultarVideojuego(true)" *ngIf="!mostrar_VideoJuegos" >Mostrar video juego</button> -->
   <!-- <videojuego *ngIf="mostrar_VideoJuegos"></videojuego> -->
   <!-- <cursos></cursos>  -->
-  <zapatillas></zapatillas>
+  <!-- <zapatillas></zapatillas> -->
+
+
+  <router-outlet></router-outlet>
 </div>

@@ -2,7 +2,7 @@
 
 <p>Anadir marca</p>
 <p>
-  <input type="text" [(ngModel)]="mi_marca" (keyup.enter)="onBlur"/>
+  <input type="text" [(ngModel)]="mi_marca" (keyup.enter)="mostrarPalabra()"/>
 <button (click)="getMarca()">Mostrar Marca</button>
 <button (click)="addMarca()">Anadir Marca</button>
 </p>
@@ -23,14 +23,23 @@
     <span
       [ngStyle]="{
         'text-decoration': !zapatilla.stock ? 'line-throught' : 'none'
+      }">
+      {{ zapatilla.nombre }}-
+      
+      <strong 
+      [class.altoPrecio]="zapatilla.precio >= 80"
+      [ngClass]="{
+        'fondoRojo':zapatilla.precio > 100,
+        'subrayado': zapatilla.marca == 'Nike'
       }"
-      >{{ zapatilla.nombre }}-<strong>{{ zapatilla.precio }}$</strong>
+      >{{ zapatilla.precio }}$</strong>
     </span>
 
     <span
       *ngIf="zapatilla.precio < 1600"
       [style.background]="zapatilla.precio < 1600 ? 'green' : 'transparent'"
       [style.color]="zapatilla.precio < 1600 ? 'white' : 'black'"
+   
     >
       EN OFERTA!</span
     >
