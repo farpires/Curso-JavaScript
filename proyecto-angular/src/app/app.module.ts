@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
-import {FormsModule}from '@angular/forms';//si queremos utiliza el kuidata vinger y nuestro formularios tenemos que inportarlo
+import {HttpClientModule} from '@angular/common/http';//modulos de los http (para hacer las peticiones ajax con hhtp)
+import {FormsModule}from '@angular/forms';//si queremos utiliza el kuidata vinger y nuestro formularios tenemos que importarlo
 import { routing, appRoutingProviders} from './app.routing';
 
 import { AppComponent } from './app.component';
@@ -10,6 +10,14 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { CreateComponent } from './components/create/create.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { EditComponent } from './components/edit/edit.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { ResaltadoDirective } from './resaltado.directive';
+
+// import * as $ from 'jquery';
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +26,18 @@ import { ErrorComponent } from './components/error/error.component';
     ProjectsComponent,
     CreateComponent,
     ContactComponent,
-    ErrorComponent
+    ErrorComponent,
+    DetailComponent,
+    EditComponent,
+    SliderComponent,
+    ResaltadoDirective,
+  
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     appRoutingProviders

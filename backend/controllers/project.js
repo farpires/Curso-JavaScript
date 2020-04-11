@@ -5,6 +5,7 @@
 var Project = require('../models/project');
 //importar libreria para borra un archivo(imagen)
 var fs = require('fs');
+var path = require('path');
 
 //obj json
 //crear propiedades por cada metodo
@@ -125,7 +126,21 @@ var controller = {
        }
 
  
+    },
+    getImageFile: function(req,res){
+        var file = req.params.image;
+        var path_file = './uploads/'+file;
+        fs.exists(path_file,(exists)=>{
+            if(exists){
+                return res.sendFile(path.resolve(path_file));//el nombre path en este caso es el modulo de nodo.js que lo vamos a tener que inportar por arriba
+            }else{
+                return res.status(200).send({
+                    message: "no existe la imagen..."
+                });
+            }
+        })
     }
+
 
 
 };
